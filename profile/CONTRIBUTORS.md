@@ -47,4 +47,4 @@ Ya sea liderando proyectos, desarrollando código, diseñando interfaces o simpl
 
 ---
 
-¿Quieres unirte? Revisa nuestro [README](.github/profile/README.md) para más información.
+¿Quieres unirte? Revisa nuestro [README.md](./README.md) para más información.
