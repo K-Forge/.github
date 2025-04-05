@@ -23,7 +23,7 @@ Ofrece acceso a eventos, horarios y herramientas para estudiantes, docentes y fu
 🛒 Tienda-K es una app de K-Forge que busca mejorar la interacción con la Tienda K de la universidad mediante una plataforma web, permitiendo a la comunidad Konradista explorar productos y realizar pedidos más allá del punto de venta físico.
 
 ### 🔹 KomidaGPT  
-🧠🍽️ KomidaGPT es una app de K-Forge que permite registrar los ingredientes que tienes en casa y, gracias a la API de ChatGPT, sugiere recetas personalizadas para tus almuerzos semanales, ayudándote a planear mejor tus comidas y reducir el desperdicio.
+🧠🍽️ KomidaGPT es una app que permite registrar los ingredientes que tienes en casa y, gracias a la API de ChatGPT, sugiere recetas personalizadas para tus almuerzos semanales. ¡Planifica mejor y reduce el desperdicio de comida!
 
 ---
 
@@ -33,7 +33,6 @@ K-Forge está abierto a estudiantes activos de la **Fundación Universitaria Kon
 
 Si te interesa unirte al equipo:
 - 📧 Escríbenos a: **kforge.dev@gmail.com** (asunto: *Unirme*)
-- Consulta el archivo 👥 [CONTRIBUTORS.md](./CONTRIBUTORS.md) para más información sobre nuestro equipo.
 
 ¡Siempre estamos buscando nuevas ideas y talentos! 🌱
 
@@ -44,7 +43,7 @@ Si te interesa unirte al equipo:
 El equipo de K-Forge está conformado por estudiantes apasionados por la tecnología, el desarrollo y la innovación.  
 Cada miembro aporta con sus habilidades para construir soluciones reales con impacto.
 
-Consulta el archivo [CONTRIBUTORS.md](./CONTRIBUTORS.md) para conocer a quienes hacen parte de esta comunidad.
+- Consulta el archivo 👥 [CONTRIBUTORS.md](./CONTRIBUTORS.md) para más información sobre nuestro equipo.
 
 ---
 
