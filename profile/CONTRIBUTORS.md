@@ -16,7 +16,7 @@ Ya sea liderando proyectos, desarrollando código, diseñando interfaces o simpl
 - **Julián David Ávila Cortés** GitHub:([JulianAvila259](https://github.com/JulianAvila259))  
   Desarrollador activo en el proyecto K-APP.
 
-- **Santiago Rocha Ramírez** GitHub:([ZavithaR_17](https://github.com/ZavithaR_17))  
+- **Santiago Rocha Ramírez** GitHub:([SantiagoRR17](https://github.com/SantiagoRR17))  
   Desarrollador activo en el proyecto K-APP.
 
 - **Diego Ali Lares Rondon** GitHub:([DIEGO-ALI](https://github.com/DIEGO-ALI))  
@@ -30,7 +30,7 @@ Ya sea liderando proyectos, desarrollando código, diseñando interfaces o simpl
 - **Juan Camilo Prieto Mestizo** GitHub:([KamiroDark](https://github.com/KamiroDark))  
   Desarrollador activo en el proyecto Tienda-K.
 
-- **Miguel Ángel Quintín Acero** GitHub:([Mike.](https://github.com/Mike.))  
+- **Miguel Ángel Quintín Acero** GitHub:([Mikey0o](https://github.com/Mikey0o))  
   Desarrollador activo en el proyecto Tienda-K.
 
 ## 🍽️ Colaboradores de KomidaGPT
