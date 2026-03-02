@@ -1,50 +1,45 @@
-# 🧑‍💻 Contribuidores
+<p align="center">
+  <img src="https://img.shields.io/badge/◈_CONTRIBUTORS-4C1D95?style=for-the-badge" alt="Contributors"/>
+</p>
 
-Este archivo reconoce a quienes han aportado al desarrollo y crecimiento de **K-Forge**.  
-Ya sea liderando proyectos, desarrollando código, diseñando interfaces o simplemente compartiendo ideas, ¡gracias por ser parte de este proyecto! ✨
+<p align="center">
+  <sub>Quienes hacen posible <strong>K-Forge</strong>.</sub>
+</p>
 
-## 🌟 Fundador
+<br/>
 
-- **Brian Steven Vargas Clavijo** GitHub:([13rianVargas](https://github.com/13rianVargas))  
-  Fundador de K-Forge y promotor del club en la comunidad Konradista.
+## ◈ KApp
 
-## 🧩 Colaboradores de K-APP
+| | Nombre | GitHub | Rol |
+|---|---|---|---|
+| <img src="https://github.com/13rianVargas.png" width="40" style="border-radius:50%"/> | **Brian Steven Vargas Clavijo** | [@13rianVargas](https://github.com/13rianVargas) | ![Líder](https://img.shields.io/badge/Líder-8B5CF6?style=flat-square) |
+| <img src="https://github.com/JulianAvila259.png" width="40" style="border-radius:50%"/> | **Julián David Ávila Cortés** | [@JulianAvila259](https://github.com/JulianAvila259) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
+| <img src="https://github.com/SantiagoRR17.png" width="40" style="border-radius:50%"/> | **Santiago Rocha Ramírez** | [@SantiagoRR17](https://github.com/SantiagoRR17) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
+| <img src="https://github.com/DIEGO-ALI.png" width="40" style="border-radius:50%"/> | **Diego Ali Lares Rondon** | [@DIEGO-ALI](https://github.com/DIEGO-ALI) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
 
-- **Brian Steven Vargas Clavijo** GitHub:([13rianVargas](https://github.com/13rianVargas))  
-  Líder y desarrollador activo en el proyecto K-APP.
+<br/>
 
-- **Julián David Ávila Cortés** GitHub:([JulianAvila259](https://github.com/JulianAvila259))  
-  Desarrollador activo en el proyecto K-APP.
+## ◈ TiendaK
 
-- **Santiago Rocha Ramírez** GitHub:([SantiagoRR17](https://github.com/SantiagoRR17))  
-  Desarrollador activo en el proyecto K-APP.
+| | Nombre | GitHub | Rol |
+|---|---|---|---|
+| <img src="https://github.com/13rianVargas.png" width="40" style="border-radius:50%"/> | **Brian Steven Vargas Clavijo** | [@13rianVargas](https://github.com/13rianVargas) | ![Product Owner](https://img.shields.io/badge/Product_Owner-7C3AED?style=flat-square) |
+| <img src="https://github.com/KamiroDark.png" width="40" style="border-radius:50%"/> | **Juan Camilo Prieto Mestizo** | [@KamiroDark](https://github.com/KamiroDark) | ![Scrum Master](https://img.shields.io/badge/Scrum_Master-8B5CF6?style=flat-square) |
+| <img src="https://github.com/Alejandraqt.png" width="40" style="border-radius:50%"/> | **Nicoll Alejandra Durán Quintero** | [@Alejandraqt](https://github.com/Alejandraqt) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
+| <img src="https://github.com/Mikey0o.png" width="40" style="border-radius:50%"/> | **Miguel Ángel Quintín Acero** | [@Mikey0o](https://github.com/Mikey0o) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
 
-- **Diego Ali Lares Rondon** GitHub:([DIEGO-ALI](https://github.com/DIEGO-ALI))  
-  Desarrollador activo en el proyecto K-APP.
+<br/>
 
-## 🛍️ Colaboradores de Tienda-K
+## ◈ Docentes Colaboradores
 
-- **Nicoll Alejandra Durán Quintero** GitHub:([Alejandraqt](https://github.com/Alejandraqt))  
-  Líder y desarrolladora activa en el proyecto Tienda-K.
+<p align="center">
+  <img src="https://img.shields.io/badge/Próximamente-Buscando_aliados_académicos-4C1D95?style=flat-square" alt="Próximamente"/>
+</p>
 
-- **Juan Camilo Prieto Mestizo** GitHub:([KamiroDark](https://github.com/KamiroDark))  
-  Desarrollador activo en el proyecto Tienda-K.
-
-- **Miguel Ángel Quintín Acero** GitHub:([Mikey0o](https://github.com/Mikey0o))  
-  Desarrollador activo en el proyecto Tienda-K.
-
-## 🍽️ Colaboradores de KomidaGPT
-
-- **Mauricio Jesus Iturriza Medina** GitHub:([MauItu](https://github.com/MauItu))  
-  Líder y desarrollador activo en el proyecto KomidaGPT.
-
-- **Brian Steven Vargas Clavijo** GitHub:([13rianVargas](https://github.com/13rianVargas))  
-  Desarrollador activo en el proyecto KomidaGPT.
-
-## 👨‍🏫 Docentes Colaboradores
-
-- Aquí pondríamos un docente colaborador, si tan solo tuvieramos uno 😭.
+<br/>
 
 ---
 
-¿Quieres unirte? Revisa nuestro [README.md](./README.md) para más información.
+<p align="center">
+  <sub>¿Quieres unirte? → <a href="./README.md"><strong>README.md</strong></a></sub>
+</p>
