@@ -27,11 +27,11 @@
       <p align="center">App móvil para la comunidad Konradista. Acceso a eventos, horarios y herramientas universitarias.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🛒 TiendaK</h3>
+      <h3 align="center">🛒 TiendaQ</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Web-Plataforma-8B5CF6?style=flat-square&logo=google-chrome&logoColor=white" alt="Web"/>
       </p>
-      <p align="center">Plataforma web para explorar productos y realizar pedidos de la Tienda K universitaria.</p>
+      <p align="center">Plataforma web para explorar productos y realizar pedidos de la Tienda Q E-Commerce.</p>
     </td>
   </tr>
   <tr>
