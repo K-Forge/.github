@@ -1,11 +1,25 @@
-<p align="center">
-  <img src="./assets/public-banner.svg" alt="K-Forge" width="800"/>
-</p>
+<a id="top"></a>
+
+<div align="center">
+  <table style="border: none; background-color: transparent;">
+    <tr style="border: none; background-color: transparent;">
+      <td align="center" width="20%" style="border: none;">
+        <!-- ESPACIO RESERVADO PARA LOGO OFICIAL K-FORGE -->
+        <!-- NOTA: El humano subira la imagen correspondiente a este color -->
+        <img src="./assets/kforge-logo-purple.jpg" alt="K-Forge Oficial Logo" width="120" style="border-radius: 10px;" />
+      </td>
+      <td align="center" width="80%" style="border: none;">
+        <!-- BANNER CIBERNETICO DEL PROYECTO -->
+        <img src="./assets/project-banner.svg" alt="Banner del Proyecto" width="100%" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Acceso-P%C3%BAblico-7C3AED?style=for-the-badge" alt="Acceso Público"/>
-  <img src="https://img.shields.io/badge/K--Forge-Comunidad-4C1D95?style=for-the-badge" alt="K-Forge Comunidad"/>
-  <a href="mailto:kforge.dev@gmail.com"><img src="https://img.shields.io/badge/Contacto-kforge.dev@gmail.com-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
+  <img src="https://img.shields.io/badge/Acceso-P%C3%BAblico-8B5CF6?style=for-the-badge" alt="Acceso Publico"/>
+  <img src="https://img.shields.io/badge/K--Forge-Comunidad-8B5CF6?style=for-the-badge" alt="K-Forge Comunidad"/>
+  <a href="mailto:kforge.dev@gmail.com"><img src="https://img.shields.io/badge/Contacto-kforge.dev@gmail.com-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
 </p>
 
 <br/>
@@ -60,6 +74,23 @@ Conoce a quienes hacen posible K-Forge → [**CONTRIBUTORS.md**](./CONTRIBUTORS.
   <sub>Con el apoyo de estudiantes de la <strong>Konrad Lorenz</strong></sub>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Forjamos_ideas,_creamos_futuro-4C1D95?style=for-the-badge" alt="Lema"/>
-</p>
+<div align="center">
+  <br>
+  <a href="https://github.com/K-Forge">
+    <img src="https://img.shields.io/badge/GitHub-K--Forge-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  &nbsp;
+  <a href="https://kforge.vercel.app">
+    <img src="https://img.shields.io/badge/Web-kforge.vercel.app-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Web"/>
+  </a>
+  &nbsp;
+  <a href="mailto:kforge.dev@gmail.com">
+    <img src="https://img.shields.io/badge/Email-kforge.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <br><br>
+  <a href="#top">
+    <img src="https://img.shields.io/badge/%E2%96%B2_Volver_arriba-8B5CF6?style=flat-square" alt="Volver arriba"/>
+  </a>
+  <br><br>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:000000,100:8B5CF6&section=footer" width="100%"/>
+</div>
