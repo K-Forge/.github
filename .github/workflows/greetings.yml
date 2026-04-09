@@ -1,0 +1,25 @@
+name: Greetings
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Hola! Gracias por abrir tu primer issue en K-Forge.
+            Nuestro equipo lo revisara lo antes posible. Si tienes informacion adicional, no dudes en agregarla aqui.
+          pr-message: |
+            Hola! Gracias por tu primer Pull Request en K-Forge.
+            Un miembro del equipo revisara tus cambios pronto. Asegurate de que el checklist del PR esta completo.
