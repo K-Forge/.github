@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <sub>Política de seguridad de <strong>K-Forge</strong>.</sub>
+  <sub>Politica de seguridad de <strong>K-Forge</strong>.</sub>
 </p>
 
 <br/>
@@ -12,18 +12,49 @@
 
 Si descubres una vulnerabilidad de seguridad en cualquier proyecto de K-Forge:
 
-**No abras un Issue público.**
+**No abras un Issue publico.**
 
-Envía un correo a:
+Envia un correo a:
 
-📧 **kforge.dev@gmail.com** — asunto: *Vulnerabilidad de seguridad*
+**kforge.dev@gmail.com** — asunto: *Vulnerabilidad de seguridad*
 
 Incluye:
 
-- Descripción de la vulnerabilidad.
+- Descripcion de la vulnerabilidad y su impacto potencial.
 - Pasos para reproducirla.
-- Impacto potencial.
-- Solución sugerida (si la tienes).
+- Componente afectado (backend API, frontend, base de datos, autenticacion, etc.).
+- Logs, capturas de pantalla o prueba de concepto relevantes.
+- Solucion sugerida (si la tienes).
+
+<br/>
+
+## ◈ Que constituye un problema de seguridad
+
+Los siguientes casos **deben** reportarse por el canal descrito arriba:
+
+- Bypass de autenticacion o autorizacion
+- Inyeccion SQL, XSS, CSRF u otros ataques de inyeccion
+- Exposicion de datos sensibles (credenciales, informacion personal)
+- Insecure Direct Object References (IDOR)
+- Server-Side Request Forgery (SSRF)
+- Endpoints expuestos que deberian requerir autenticacion
+- Credenciales o secretos hardcodeados en el codigo
+- Vulnerabilidades en dependencias con exploits conocidos
+
+Los siguientes **no** se consideran problemas de seguridad:
+
+- Bugs sin impacto de seguridad
+- Solicitudes de funcionalidades o problemas de usabilidad
+- Vulnerabilidades en dependencias sin exploit demostrado contra el proyecto
+
+<br/>
+
+## ◈ Divulgacion responsable
+
+- **No** divulgues publicamente la vulnerabilidad antes de que sea resuelta.
+- **No** accedas, modifiques ni elimines datos de otros usuarios durante tu investigacion.
+- **No** realices acciones que puedan degradar el servicio.
+- Actua de buena fe para evitar violaciones de privacidad, destruccion de datos e interrupciones del servicio.
 
 <br/>
 
@@ -31,18 +62,29 @@ Incluye:
 
 | Etapa | Plazo |
 |---|---|
-| Confirmación de recepción | 48 horas |
-| Evaluación inicial | 7 días |
-| Resolución / Parche | Según severidad |
+| Confirmacion de recepcion | 48 horas |
+| Evaluacion inicial | 7 dias |
+| Resolucion / Parche | Segun severidad |
 
 <br/>
 
-## ◈ Prácticas de seguridad
+## ◈ Practicas de seguridad
 
-- **Nunca** subas credenciales, tokens o API keys al código.
+- **Nunca** subas credenciales, tokens o API keys al codigo.
 - Usa variables de entorno para datos sensibles.
-- Mantén las dependencias actualizadas.
-- Revisa permisos de acceso periódicamente.
+- Manten las dependencias actualizadas.
+- Revisa permisos de acceso periodicamente.
+
+<br/>
+
+## ◈ Versiones soportadas
+
+Las actualizaciones de seguridad se aplican a la ultima version en la rama `main`. No mantenemos parches de seguridad para versiones anteriores.
+
+| Rama | Soportada |
+|---|---|
+| `main` | Si |
+| Otras | No |
 
 <br/>
 
