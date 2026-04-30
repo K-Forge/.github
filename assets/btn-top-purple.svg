@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="32" viewBox="0 0 150 32">
+  <defs>
+    <linearGradient id="btnTopPBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#1A0533"/>
+    </linearGradient>
+  </defs>
+  <rect width="150" height="32" rx="7" fill="url(#btnTopPBg)" stroke="#8B5CF6" stroke-width="1.2"/>
+
+  <!-- Arrow up -->
+  <g transform="translate(22, 16)" fill="#8B5CF6">
+    <polygon points="0,-7 7,3 -7,3">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <line x1="42" y1="7" x2="42" y2="25" stroke="#8B5CF6" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="55" y="21" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="700" fill="#8B5CF6" letter-spacing="0.8">Volver arriba</text>
+</svg>

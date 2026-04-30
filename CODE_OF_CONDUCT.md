@@ -76,23 +76,21 @@ Si presencias o eres victima de una violacion, reporta de forma confidencial a:
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:000000,100:8B5CF6&section=footer" width="100%"/>
+  <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/footer-purple.svg" width="100%" alt="K-Forge footer"/>
   <br/>
   <a href="https://github.com/K-Forge">
-    <img src="https://img.shields.io/badge/GitHub-K--Forge-111827?style=for-the-badge&logo=github&logoColor=8B5CF6" alt="GitHub K-Forge"/>
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/btn-github-purple.svg" alt="GitHub K-Forge" height="36"/>
   </a>
   &nbsp;
   <a href="https://kforge.vercel.app">
-    <img src="https://img.shields.io/badge/Web-kforge.vercel.app-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Web"/>
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/btn-web-purple.svg" alt="kforge.vercel.app" height="36"/>
   </a>
   &nbsp;
   <a href="mailto:kforge.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Email-kforge.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/btn-email-purple.svg" alt="kforge.dev" height="36"/>
   </a>
   <br/><br/>
-  <sub>Basado en el <a href="https://www.contributor-covenant.org/es/version/2/1/code_of_conduct/">Contributor Covenant v2.1</a></sub>
-  <br/><br/>
   <a href="#top">
-    <img src="https://img.shields.io/badge/%E2%96%B2_Volver_arriba-8B5CF6?style=flat-square" alt="Volver arriba"/>
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/btn-top-purple.svg" alt="Volver arriba" height="32"/>
   </a>
 </div>
