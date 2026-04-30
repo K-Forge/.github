@@ -1,10 +1,4 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/◈_CONTRIBUTING-4C1D95?style=for-the-badge" alt="Contributing"/>
-</p>
-
-<p align="center">
-  <sub>Guia para contribuir a los proyectos de <strong>K-Forge</strong>.</sub>
-</p>
+<img src="./assets/banner-contributing.svg" width="100%" alt="Contributing — K-Forge"/>
 
 <br/>
 

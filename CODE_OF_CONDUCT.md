@@ -1,10 +1,4 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/◈_CODE_OF_CONDUCT-4C1D95?style=for-the-badge" alt="Code of Conduct"/>
-</p>
-
-<p align="center">
-  <sub>Codigo de conducta de <strong>K-Forge</strong>.</sub>
-</p>
+<img src="./assets/banner-code-of-conduct.svg" width="100%" alt="Code of Conduct — K-Forge"/>
 
 <br/>
 

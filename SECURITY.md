@@ -1,10 +1,4 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/◈_SECURITY-4C1D95?style=for-the-badge" alt="Security"/>
-</p>
-
-<p align="center">
-  <sub>Politica de seguridad de <strong>K-Forge</strong>.</sub>
-</p>
+<img src="./assets/banner-security.svg" width="100%" alt="Security — K-Forge"/>
 
 <br/>
 
