@@ -39,7 +39,7 @@ type: short message in english
 | `refactor` | Refactorizacion de codigo sin cambiar comportamiento         |
 | `test`     | Agregar o modificar tests                                    |
 
-### Ejemplos
+### Ejemplos correctos
 
 ```
 feat: add login screen
@@ -52,73 +52,146 @@ release: prepare version 1.0.0
 hotfix: fix cors config in gateway
 ```
 
+### Ejemplos incorrectos
+
+| Ejemplo | Problema |
+|---|---|
+| `update` | No describe nada util |
+| `cambios` | Ambiguo y no esta en ingles |
+| `FEAT: Add product` | No usar mayusculas |
+| `feat(api): add product` | No usar scopes entre parentesis |
+| `feat: Add Product.` | No usar mayusculas ni punto final |
+| `fix: fixed the bug` | Vago — que bug, donde |
+
 <br/>
 
-## ◈ Modelo de Ramas — Git Flow
+## ◈ Estrategia de Ramas y Flujo (Git Flow)
 
-Seguimos el modelo **Git Flow** para organizar el trabajo en ramas. Todas las ramas deben partir de `develop` (excepto `hotfix/*`, que parte de `main`).
+Usamos **Git Flow**. Regla base: casi todo sale de `develop`; solo `hotfix/*` sale de `main`.
 
+### Visual rapido del flujo
+
+```mermaid
+gitGraph
+   commit id: "init"
+   branch develop
+   checkout develop
+   commit id: "setup project"
+   branch feature/login
+   checkout feature/login
+   commit id: "feat: add login screen"
+   commit id: "feat: add jwt auth"
+   checkout develop
+   merge feature/login
+   branch feature/courses
+   checkout feature/courses
+   commit id: "feat: add course list"
+   checkout develop
+   merge feature/courses
+   branch chore/update-docs
+   checkout chore/update-docs
+   commit id: "docs: add api documentation"
+   checkout develop
+   merge chore/update-docs
+   branch test/sprint-1
+   checkout test/sprint-1
+   commit id: "test: integration tests"
+   commit id: "fix: resolve test failures"
+   checkout develop
+   merge test/sprint-1
+   branch release/1.0.0
+   checkout release/1.0.0
+   commit id: "release: prepare v1.0.0"
+   checkout main
+   merge release/1.0.0 tag: "v1.0.0"
+   checkout develop
+   merge release/1.0.0
+   checkout main
+   branch hotfix/fix-cors
+   checkout hotfix/fix-cors
+   commit id: "hotfix: fix cors config"
+   checkout main
+   merge hotfix/fix-cors tag: "v1.0.1"
+   checkout develop
+   merge hotfix/fix-cors
 ```
-main ← release/* ← develop ← feature/tu-feature
-main ← hotfix/*
-```
 
-### Tipos de Ramas
+### Tipos de ramas y uso correcto
 
-| Rama        | Proposito                                           | Nace de   | Se fusiona en       |
-| ----------- | --------------------------------------------------- | --------- | ------------------- |
-| `main`      | Codigo estable en produccion                        | —         | —                   |
-| `develop`   | Integracion de funcionalidades en desarrollo        | `main`    | `release/*`, `main` |
-| `feature/*` | Desarrollo de nuevas funcionalidades                | `develop` | `develop`           |
-| `chore/*`   | Mantenimiento (docs, configs, dependencias, CI/CD)  | `develop` | `develop`           |
-| `bugfix/*`  | Correccion de bugs no urgentes en desarrollo        | `develop` | `develop`           |
-| `test/*`    | Pruebas de integracion o experimentacion            | `develop` | `develop`           |
-| `hotfix/*`  | Correcciones urgentes en produccion                 | `main`    | `main`, `develop`   |
-| `release/*` | Preparacion de una version para produccion          | `develop` | `main`, `develop`   |
+| Rama        | Para que se usa                                 | Crear desde | PR/Merge hacia      | Eliminar |
+| ----------- | ----------------------------------------------- | ----------- | ------------------- | -------- |
+| `main`      | Codigo estable en produccion                    | —           | —                   | Nunca    |
+| `develop`   | Integracion de trabajo diario                   | `main`      | `main` (via release)| Nunca    |
+| `feature/*` | Nueva funcionalidad                             | `develop`   | `develop`           | Tras merge a `develop` |
+| `bugfix/*`  | Bug no urgente detectado en desarrollo          | `develop`   | `develop`           | Tras merge a `develop` |
+| `chore/*`   | Mantenimiento (docs, CI/CD, deps, configs)     | `develop`   | `develop`           | Tras merge a `develop` |
+| `test/*`    | Pruebas temporales o validaciones tecnicas      | `develop`   | `develop` (si aplica)| Tras merge o al descartar |
+| `release/*` | Preparar version (ajustes finales, versionado)  | `develop`   | `main` y `develop`  | Tras merge a ambos |
+| `hotfix/*`  | Incidente urgente en produccion                 | `main`      | `main` y `develop`  | Tras merge a ambos |
 
 ### Convencion de nombres
 
-Usar **kebab-case** (minusculas separadas por guiones) despues del prefijo. Ser descriptivo pero conciso.
+Formato: `<tipo>/<descripcion-en-kebab-case>`.
 
 ```
-feature/student-dashboard           (correcto)
-feature/assignment-submission-api   (correcto)
-chore/update-spring-dependencies    (correcto)
-bugfix/fix-null-pointer-product     (correcto)
-hotfix/fix-cors-gateway             (correcto)
-release/1.2.0                       (correcto)
-test/sprint-3                       (correcto)
+feature/student-dashboard
+bugfix/fix-null-pointer-product
+chore/update-spring-dependencies
+hotfix/fix-cors-gateway
+release/1.2.0
 
-feature/changes                     (incorrecto — muy vago)
-mi-rama                             (incorrecto — falta prefijo)
-feature/StudentDashboard            (incorrecto — no usar camelCase)
-feat/login                          (incorrecto — usar feature, no feat)
+feature/changes      (incorrecto: muy vago)
+mi-rama              (incorrecto: sin prefijo)
+feature/StudentDash  (incorrecto: no kebab-case)
+feat/login           (incorrecto: usar feature/*)
 ```
 
-### Flujo completo de trabajo
+### Crear ramas — comandos de referencia
 
 ```bash
-# 1. Actualizar develop
-git checkout develop
-git pull origin develop
+# Feature (nace de develop)
+git checkout develop && git pull origin develop
+git checkout -b feature/nombre-descriptivo
 
-# 2. Crear rama
-git checkout -b feature/course-enrollment
+# Bugfix (nace de develop)
+git checkout develop && git pull origin develop
+git checkout -b bugfix/descripcion-del-bug
 
-# 3. Trabajar y hacer commits
+# Chore — docs, configs, dependencias (nace de develop)
+git checkout develop && git pull origin develop
+git checkout -b chore/descripcion-tarea
+
+# Hotfix — urgente en produccion (nace de main)
+git checkout main && git pull origin main
+git checkout -b hotfix/descripcion-urgente
+
+# Release (nace de develop)
+git checkout develop && git pull origin develop
+git checkout -b release/x.y.z
+```
+
+### Workflow minimo recomendado
+
+```bash
+# 1) Sincronizar develop
+git checkout develop && git pull origin develop
+
+# 2) Crear rama de trabajo
+git checkout -b feature/nombre-del-trabajo
+
+# 3) Commits atomicos y descriptivos
 git add .
 git commit -m "feat: add course enrollment endpoint"
 
-# 4. Push de la rama
-git push origin feature/course-enrollment
+# 4) Push y abrir PR hacia develop
+git push origin feature/nombre-del-trabajo
 
-# 5. Crear Pull Request → develop
-# Esperar code review y aprobacion
-
-# 6. Merge a develop (via PR)
-# 7. Eliminar la rama feature
-git branch -d feature/course-enrollment
+# 5) Tras aprobacion y merge: eliminar rama
+git branch -d feature/nombre-del-trabajo
+git push origin --delete feature/nombre-del-trabajo
 ```
+
+> Para `release/*` y `hotfix/*`: siempre abrir PR hacia `main` Y hacia `develop` para mantener ambas ramas sincronizadas.
 
 <br/>
 
@@ -156,11 +229,21 @@ Ciclo: **alpha** → **beta** → **release candidate** → **stable** → **mai
 
 ## ◈ Estandares de codigo
 
-- Escribe codigo claro y autoexplicativo.
-- Nombra variables y funciones de forma descriptiva.
-- Documenta funciones publicas.
-- No subas credenciales, tokens ni informacion sensible.
-- Usa variables de entorno para datos sensibles.
+Reglas generales aplicables a todos los proyectos del ecosistema:
+
+| Elemento | Convencion |
+|---|---|
+| Clases, componentes | PascalCase |
+| Metodos, funciones, variables | camelCase |
+| Constantes | UPPER_SNAKE_CASE |
+| Paquetes / modulos | minusculas |
+| Indentacion JS/TS | 2 espacios |
+| Indentacion Java/Kotlin | 4 espacios |
+| Imports sin usar | Eliminar siempre |
+| Credenciales en codigo | Nunca — usar `.env` |
+| Codigo comentado sin uso | Eliminar antes del PR |
+
+Cada proyecto define sus estandares especificos de framework en su `AGENTS.md`.
 
 <br/>
 

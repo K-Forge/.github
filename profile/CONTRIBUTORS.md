@@ -8,18 +8,26 @@
 
 <br/>
 
+## ◈ K-Forge Web
+
+| | Nombre | GitHub | Rol |
+|---|---|---|---|
+| <img src="https://github.com/13rianVargas.png" width="40" style="border-radius:50%"/> | **Brian Steven Vargas Clavijo** | [@13rianVargas](https://github.com/13rianVargas) | ![Fundador](https://img.shields.io/badge/Fundador-7C3AED?style=flat-square) |
+
+<br/>
+
 ## ◈ KApp
 
 | | Nombre | GitHub | Rol |
 |---|---|---|---|
-| <img src="https://github.com/13rianVargas.png" width="40" style="border-radius:50%"/> | **Brian Steven Vargas Clavijo** | [@13rianVargas](https://github.com/13rianVargas) | ![Líder](https://img.shields.io/badge/Líder-8B5CF6?style=flat-square) |
+| <img src="https://github.com/13rianVargas.png" width="40" style="border-radius:50%"/> | **Brian Steven Vargas Clavijo** | [@13rianVargas](https://github.com/13rianVargas) | ![Líder](https://img.shields.io/badge/L%C3%ADder-8B5CF6?style=flat-square) |
 | <img src="https://github.com/JulianAvila259.png" width="40" style="border-radius:50%"/> | **Julián David Ávila Cortés** | [@JulianAvila259](https://github.com/JulianAvila259) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
 | <img src="https://github.com/SantiagoRR17.png" width="40" style="border-radius:50%"/> | **Santiago Rocha Ramírez** | [@SantiagoRR17](https://github.com/SantiagoRR17) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
 | <img src="https://github.com/DIEGO-ALI.png" width="40" style="border-radius:50%"/> | **Diego Ali Lares Rondon** | [@DIEGO-ALI](https://github.com/DIEGO-ALI) | ![Dev](https://img.shields.io/badge/Dev-A78BFA?style=flat-square) |
 
 <br/>
 
-## ◈ TiendaK
+## ◈ TiendaQ
 
 | | Nombre | GitHub | Rol |
 |---|---|---|---|
@@ -30,10 +38,20 @@
 
 <br/>
 
+## ◈ Roastory
+
+| | Nombre | GitHub | Rol |
+|---|---|---|---|
+| <img src="https://github.com/13rianVargas.png" width="40" style="border-radius:50%"/> | **Brian Steven Vargas Clavijo** | [@13rianVargas](https://github.com/13rianVargas) | ![Backend](https://img.shields.io/badge/Backend-8B5CF6?style=flat-square) |
+| <img src="https://github.com/sebasanguloc.png" width="40" style="border-radius:50%"/> | **Sebastián Angulo Castellanos** | [@sebasanguloc](https://github.com/sebasanguloc) | ![DBA](https://img.shields.io/badge/DBA-A78BFA?style=flat-square) |
+| <img src="https://github.com/Landrea28.png" width="40" style="border-radius:50%"/> | **Lina Andrea Bello Ballen** | [@Landrea28](https://github.com/Landrea28) | ![Frontend](https://img.shields.io/badge/Frontend-A78BFA?style=flat-square) |
+
+<br/>
+
 ## ◈ Docentes Colaboradores
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Próximamente-Buscando_aliados_académicos-4C1D95?style=flat-square" alt="Próximamente"/>
+  <img src="https://img.shields.io/badge/Pr%C3%B3ximamente-Buscando_aliados_acad%C3%A9micos-4C1D95?style=flat-square" alt="Próximamente"/>
 </p>
 
 <br/>

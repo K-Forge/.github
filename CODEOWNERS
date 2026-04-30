@@ -1,5 +1,23 @@
 # K-Forge — CODEOWNERS
-# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Asigna revisores automaticos en PRs segun los archivos modificados.
+# GitHub solicita revision al owner del patron mas especifico que aplique.
+#
+# Formato:  <patron>   <@owner> [<@owner2> ...]
+# Docs:     https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Cuando un nuevo miembro lidere un proyecto o modulo, agregar su handle
+# junto al de @13rianVargas en el patron correspondiente.
+# Ejemplo: /profile/ @13rianVargas @nuevo-lider
 
-# Reviewer por defecto para todos los archivos
-* @13rianVargas
+# Fallback global — cualquier archivo sin patron especifico
+*                   @13rianVargas
+
+# Community health files — aprobacion del fundador obligatoria
+CODE_OF_CONDUCT.md  @13rianVargas
+CONTRIBUTING.md     @13rianVargas
+SECURITY.md         @13rianVargas
+CODEOWNERS          @13rianVargas
+
+# Perfil publico de la organizacion
+/profile/           @13rianVargas
