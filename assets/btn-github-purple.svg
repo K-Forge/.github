@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="190" height="36" viewBox="0 0 190 36">
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="36" viewBox="0 0 260 36">
   <defs>
     <linearGradient id="btnGhPBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0D1117"/>
       <stop offset="100%" stop-color="#1A0533"/>
     </linearGradient>
   </defs>
-  <rect width="190" height="36" rx="8" fill="url(#btnGhPBg)" stroke="#8B5CF6" stroke-width="1.2"/>
+  <rect width="260" height="36" rx="8" fill="url(#btnGhPBg)" stroke="#8B5CF6" stroke-width="1.2"/>
 
   <!-- GitHub icon -->
   <g transform="translate(20, 18)" fill="#8B5CF6">

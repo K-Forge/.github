@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150" height="32" viewBox="0 0 150 32">
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="32" viewBox="0 0 220 32">
   <defs>
     <linearGradient id="btnTopPBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0D1117"/>
       <stop offset="100%" stop-color="#1A0533"/>
     </linearGradient>
   </defs>
-  <rect width="150" height="32" rx="7" fill="url(#btnTopPBg)" stroke="#8B5CF6" stroke-width="1.2"/>
+  <rect width="220" height="32" rx="7" fill="url(#btnTopPBg)" stroke="#8B5CF6" stroke-width="1.2"/>
 
   <!-- Arrow up -->
   <g transform="translate(22, 16)" fill="#8B5CF6">
