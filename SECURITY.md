@@ -84,6 +84,24 @@ Las actualizaciones de seguridad se aplican a la ultima version en la rama `main
 
 ---
 
-<p align="center">
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:000000,100:8B5CF6&section=footer" width="100%"/>
+  <br/>
+  <a href="https://github.com/K-Forge">
+    <img src="https://img.shields.io/badge/GitHub-K--Forge-111827?style=for-the-badge&logo=github&logoColor=8B5CF6" alt="GitHub K-Forge"/>
+  </a>
+  &nbsp;
+  <a href="https://kforge.vercel.app">
+    <img src="https://img.shields.io/badge/Web-kforge.vercel.app-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Web"/>
+  </a>
+  &nbsp;
+  <a href="mailto:kforge.dev@gmail.com">
+    <img src="https://img.shields.io/badge/Email-kforge.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <br/><br/>
   <sub>Gracias por ayudarnos a mantener K-Forge seguro.</sub>
-</p>
+  <br/><br/>
+  <a href="#top">
+    <img src="https://img.shields.io/badge/%E2%96%B2_Volver_arriba-8B5CF6?style=flat-square" alt="Volver arriba"/>
+  </a>
+</div>

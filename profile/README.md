@@ -11,11 +11,20 @@
   </tr>
 </table>
 
+<br/>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Acceso-Publico-8B5CF6?style=for-the-badge" alt="Acceso Publico"/>
-  <img src="https://img.shields.io/badge/K--Forge-Comunidad-4C1D95?style=for-the-badge" alt="K-Forge Comunidad"/>
-  <a href="https://kforge.vercel.app"><img src="https://img.shields.io/badge/Web-kforge.vercel.app-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Web"/></a>
-  <a href="mailto:kforge.dev@gmail.com"><img src="https://img.shields.io/badge/Contacto-kforge.dev-4C1D95?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
+  <a href="https://github.com/K-Forge">
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/badge-org.svg" alt="K-FORGE · ORG" height="44"/>
+  </a>
+  &nbsp;
+  <a href="https://kforge.vercel.app">
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/badge-web.svg" alt="K-FORGE · WEB" height="44"/>
+  </a>
+  <br/><br/>
+  <a href="mailto:kforge.dev@gmail.com">
+    <img src="https://raw.githubusercontent.com/K-Forge/.github/main/assets/badge-email.svg" alt="KFORGE.DEV" height="44"/>
+  </a>
 </p>
 
 <br/>
@@ -49,8 +58,13 @@ K-Forge es el espacio donde estudiantes de la Konrad Lorenz **forjan** software 
       </p>
       <p align="center">Sitio web oficial del club. Standalone components, signals, i18n (es/en), desplegado en Vercel.</p>
       <p align="center">
-        <a href="https://github.com/K-Forge/K-Forge"><img src="https://img.shields.io/badge/REPO-111827?style=flat-square&logo=github&logoColor=8B5CF6" alt="Repo"/></a>
-        <a href="https://kforge.vercel.app"><img src="https://img.shields.io/badge/LIVE-8B5CF6?style=flat-square&logo=vercel&logoColor=white" alt="Live"/></a>
+        <a href="https://github.com/K-Forge/K-Forge">
+          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="REPO" height="32"/>
+        </a>
+        &nbsp;
+        <a href="https://kforge.vercel.app">
+          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="LIVE" height="32"/>
+        </a>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -62,8 +76,11 @@ K-Forge es el espacio donde estudiantes de la Konrad Lorenz **forjan** software 
       </p>
       <p align="center">App movil para la comunidad Konradista. Clientes nativos en Kotlin (Android) y Swift (iOS), backend de microservicios Java 21 + Spring Boot 3.2.</p>
       <p align="center">
-        <a href="https://github.com/K-Forge/KApp"><img src="https://img.shields.io/badge/REPO-111827?style=flat-square&logo=github&logoColor=8B5CF6" alt="Repo"/></a>
-        <img src="https://img.shields.io/badge/WIP-4C1D95?style=flat-square" alt="WIP"/>
+        <a href="https://github.com/K-Forge/KApp">
+          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="REPO" height="32"/>
+        </a>
+        &nbsp;
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
       </p>
     </td>
   </tr>
@@ -77,8 +94,11 @@ K-Forge es el espacio donde estudiantes de la Konrad Lorenz **forjan** software 
       </p>
       <p align="center">Sistema de e-commerce universitario. Backend Java 25 + Spring Boot 4.0, frontend Angular 21, PostgreSQL.</p>
       <p align="center">
-        <a href="https://github.com/K-Forge/TiendaQ"><img src="https://img.shields.io/badge/REPO-111827?style=flat-square&logo=github&logoColor=8B5CF6" alt="Repo"/></a>
-        <img src="https://img.shields.io/badge/WIP-4C1D95?style=flat-square" alt="WIP"/>
+        <a href="https://github.com/K-Forge/TiendaQ">
+          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="REPO" height="32"/>
+        </a>
+        &nbsp;
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -90,8 +110,11 @@ K-Forge es el espacio donde estudiantes de la Konrad Lorenz **forjan** software 
       </p>
       <p align="center">Sistema de gestion para libreria-cafeteria. Node.js + Express 5, MongoDB Atlas, JWT, facturas PDF.</p>
       <p align="center">
-        <a href="https://github.com/K-Forge/Roastory"><img src="https://img.shields.io/badge/REPO-111827?style=flat-square&logo=github&logoColor=8B5CF6" alt="Repo"/></a>
-        <img src="https://img.shields.io/badge/WIP-4C1D95?style=flat-square" alt="WIP"/>
+        <a href="https://github.com/K-Forge/Roastory">
+          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="REPO" height="32"/>
+        </a>
+        &nbsp;
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
       </p>
     </td>
   </tr>
@@ -128,20 +151,24 @@ Estudiante de la Konrad Lorenz interesado en construir software real? Escribenos
 
 ---
 
-<p align="center">
-  <sub>Fundado por <a href="https://github.com/13rianVargas"><strong>Brian Steven Vargas Clavijo</strong></a></sub><br/>
-  <sub>Con el apoyo de estudiantes de la <strong>Fundacion Universitaria Konrad Lorenz</strong></sub>
-</p>
-
-<br/>
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=80&color=0:000000,100:8B5CF6&section=footer" width="100%"/>
-  <p>
-    <a href="https://github.com/K-Forge">
-      <img src="https://img.shields.io/badge/GitHub-K--Forge-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub K-Forge"/>
-    </a>
-    <a href="#top">
-      <img src="https://img.shields.io/badge/Volver_arriba-8B5CF6?style=for-the-badge" alt="Volver arriba"/>
-    </a>
-  </p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:000000,100:8B5CF6&section=footer" width="100%"/>
+  <br/>
+  <a href="https://github.com/K-Forge">
+    <img src="https://img.shields.io/badge/GitHub-K--Forge-111827?style=for-the-badge&logo=github&logoColor=8B5CF6" alt="GitHub K-Forge"/>
+  </a>
+  &nbsp;
+  <a href="https://kforge.vercel.app">
+    <img src="https://img.shields.io/badge/Web-kforge.vercel.app-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Web"/>
+  </a>
+  &nbsp;
+  <a href="mailto:kforge.dev@gmail.com">
+    <img src="https://img.shields.io/badge/Email-kforge.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <br/><br/>
+  <sub>Fundado por <a href="https://github.com/13rianVargas"><strong>Brian Steven Vargas Clavijo</strong></a> · Con el apoyo de estudiantes de la <strong>Fundacion Universitaria Konrad Lorenz</strong></sub>
+  <br/><br/>
+  <a href="#top">
+    <img src="https://img.shields.io/badge/%E2%96%B2_Volver_arriba-8B5CF6?style=flat-square" alt="Volver arriba"/>
+  </a>
 </div>
