@@ -88,3 +88,11 @@ These conventions are documented here and apply across **all** K-Forge repos:
 - **No emojis** in technical markdown unless already present.
 - **No automatic commits.** Present changes for review first.
 - **Documentation language:** Spanish for community docs.
+
+
+---
+
+## Temporary Files
+
+- `tmp/` is gitignored. Store one-off scripts and throwaway files there.
+- Delete after use. Never commit anything from `tmp/`.
