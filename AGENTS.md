@@ -13,7 +13,7 @@ K-Forge is a software development club at Fundación Universitaria Konrad Lorenz
 | **K-Forge `.github`** | `K-Forge/.github` | Public org meta-repo — you are here |
 | K-Forge `.github-private` | `K-Forge/.github-private` | Members-only org meta-repo |
 | K-Forge Website | `K-Forge/K-Forge` | Public landing page (Angular, Vercel) |
-| KApp | `K-Forge/KApp` | University management platform (Spring Boot microservices) |
+| KApp | `K-Forge/KApp` | University mobile app (Kotlin + Swift clients, Spring Boot microservices backend) |
 | TiendaQ | `K-Forge/TiendaQ` | University e-commerce system (Spring Boot + Angular) |
 | Roastory | `K-Forge/Roastory` | Library-cafe management system (Node.js + MongoDB) |
 
@@ -45,9 +45,8 @@ Everything that lives here is **public-facing** — visible to anyone visiting t
 ├── .github/
 │   ├── PULL_REQUEST_TEMPLATE.md   # Default PR template across all K-Forge repos
 │   └── dependabot.yml             # Default dependabot config
-├── CODEOWNERS                  # @13rianVargas owns everything by default
 ├── CODE_OF_CONDUCT.md          # Community code of conduct
-├── CONTRIBUTING.md             # Git Flow + Conventional Commits + SemVer guide
+├── CONTRIBUTING.md             # Git Flow + Conventional Commits + SemVer guide (canonical; copied into each project repo)
 └── SECURITY.md                 # Vulnerability reporting policy
 ```
 
@@ -67,10 +66,14 @@ Brand consistency goal: every public surface (org profile, contribute docs, repo
 
 ## Conventions (org-wide)
 
-These conventions are documented here and apply across **all** K-Forge repos:
+These conventions are defined in full in `CONTRIBUTING.md` and apply across **all** K-Forge repos. The list below is
+a summary; when it and `CONTRIBUTING.md` disagree, `CONTRIBUTING.md` wins.
 
-- **Commits:** Conventional Commits, English, lowercase, no scope, no final period.
+- **Commits:** Conventional Commits, English, lowercase, no scope, no final period. Only eight types: `feat`, `fix`,
+  `chore`, `release`, `hotfix`, `docs`, `refactor`, `test`.
 - **Branches:** Git Flow — `main`, `develop`, `feature/*`, `bugfix/*`, `chore/*`, `test/*`, `release/*`, `hotfix/*`.
+  This meta-repo is the exception: `main` only, every change through a PR from `chore/*`.
+- **Merges:** squash into `develop`, merge commit into `main`. No direct pushes to either, administrators included.
 - **Versioning:** SemVer `MAJOR.MINOR.PATCH`. Cycle: alpha → beta → stable.
 - **Documentation:** Spanish for community docs (CONTRIBUTING/CODE_OF_CONDUCT/SECURITY). No emojis in technical markdown except section bullets (`◈`).
 - **Contact:** `kforge.dev@gmail.com` for all official communication.
@@ -85,6 +88,10 @@ These conventions are documented here and apply across **all** K-Forge repos:
 - **Brand:** keep purple palette `#8B5CF6` / `#4C1D95`. Do not introduce other colors except for status badges (where light purple `#A78BFA` indicates dev role, etc.).
 - **CONTRIBUTORS.md:** keep the project name `TiendaQ` (NOT `TiendaK`). Update team rosters only when explicitly informed.
 - **Org-wide files:** changes to `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` affect every K-Forge repo. Treat them as load-bearing.
+- **`CONTRIBUTING.md` is copied verbatim into project repos** (KApp today), because organization defaults are not
+  included when a repository is cloned and agents only read the working tree. Keep every link and image in it
+  absolute so the copy renders identically. After a change here is merged, run `scripts/sync-contributing.sh` in
+  each repo that carries a copy; their CI flags a copy that has drifted.
 - **No emojis** in technical markdown unless already present.
 - **No automatic commits.** Present changes for review first.
 - **Documentation language:** Spanish for community docs.

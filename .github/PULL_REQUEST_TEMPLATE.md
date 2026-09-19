@@ -10,7 +10,8 @@ Descripcion breve de **que** cambia y **por que**.
 - [ ] `docs` — Documentacion
 - [ ] `chore` — Mantenimiento
 - [ ] `test` — Tests
-- [ ] `hotfix` — Correccion urgente
+- [ ] `release` — Preparacion de una nueva version
+- [ ] `hotfix` — Correccion urgente en produccion
 
 ## Issue relacionado
 
@@ -18,6 +19,8 @@ Closes #(numero)
 
 ## Checklist
 
+- [ ] La rama base es correcta: `develop`; `main` solo para `release/*` y `hotfix/*`
+- [ ] El titulo de la PR sigue Conventional Commits (con squash, es el mensaje del commit)
 - [ ] Mi codigo sigue las convenciones del proyecto
 - [ ] He hecho self-review de mi propio codigo
 - [ ] He comentado las partes que no son obvias
