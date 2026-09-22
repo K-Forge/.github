@@ -1,0 +1,85 @@
+name: Git conventions
+
+# Reusable across the organization: every repository calls this instead of carrying its own copy, so
+# the rules live once - in CONTRIBUTING.md and in the script beside it. A repository calls it with:
+#
+#   name: Conventions
+#   on:
+#     pull_request:
+#       branches: [main, develop]
+#       types: [opened, edited, synchronize, reopened]
+#   jobs:
+#     conventions:
+#       uses: K-Forge/.github/.github/workflows/git-conventions.yml@main
+#
+# The caller still needs scripts/check-git-conventions.sh locally for its commit-msg hook; CI reads
+# the canonical copy from here, so a stale local copy can never weaken the check.
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  git:
+    name: Git conventions
+    runs-on: ubuntu-latest
+
+    steps:
+      # Full history: the check walks every commit between the base and the head of the pull request.
+      - name: Checkout the calling repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # Public repository, so no token is needed. Pinned to main: the rules are whatever the
+      # organization currently publishes, which is also what CONTRIBUTING.md says.
+      - name: Checkout the organization rules
+        uses: actions/checkout@v5
+        with:
+          repository: K-Forge/.github
+          path: .org-rules
+
+      # Everything from the event goes through env, never through ${{ }} inside run: a pull request
+      # title is text anyone opening a pull request controls, and interpolating it is a shell injection.
+      - name: Check branch, title and commits
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          check=.org-rules/scripts/check-git-conventions.sh
+          status=0
+          bash "$check" branch "$HEAD_REF" "$BASE_REF" || status=1
+          bash "$check" title "$PR_TITLE" || status=1
+          # Dependabot writes its own commits and nobody can reword them. The title is still checked,
+          # because squash merging turns it into the commit that stays on develop.
+          case $HEAD_REF in
+            dependabot/*) echo "commits skipped: written by Dependabot" ;;
+            *) bash "$check" range "$BASE_SHA" "$HEAD_SHA" || status=1 ;;
+          esac
+          exit "$status"
+
+  contributing:
+    # Deliberately not a blocking check: a change to the organization's guide would otherwise block
+    # every open pull request in every repository until someone syncs. The red mark is the reminder.
+    name: CONTRIBUTING in sync
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the calling repository
+        uses: actions/checkout@v5
+
+      - name: Compare any local copy with the organization's canonical guide
+        run: |
+          if [ ! -f CONTRIBUTING.md ]; then
+            echo "This repository has no local copy; it uses the organization default."
+            exit 0
+          fi
+          curl -fsSL https://raw.githubusercontent.com/K-Forge/.github/main/CONTRIBUTING.md -o "$RUNNER_TEMP/canonical.md"
+          if ! diff -u "$RUNNER_TEMP/canonical.md" CONTRIBUTING.md; then
+            echo "::error file=CONTRIBUTING.md::CONTRIBUTING.md differs from K-Forge/.github. Run the repository's sync script and commit the result."
+            exit 1
+          fi
